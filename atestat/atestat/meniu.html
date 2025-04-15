@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang='ro'>
+<head>
+    <meta charset='utf-8'>
+    <title>Meniu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url('imagini/meniu.png');
+            background-size: 100% 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            padding-left: 5vw;
+        }
+
+        .playwrite-it-moderna {
+            font-family: "Playwrite IT Moderna", sans-serif;
+            font-weight: 400;
+        }
+
+        p {
+            font-size: 14vw;
+            color: #b3b6b7;
+            font-weight: bold;
+            margin-bottom: 2vh;
+        }
+
+        .butoane_meniu {
+            width: 80vw;
+            height: auto;
+            font-size: 8vw;
+            border: none;
+            background: none;
+            color: #808080;
+            cursor: pointer;
+            text-align: left;
+            padding: 1vh 0;
+            transition: all 0.3s ease;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            display: block;
+            width: 100%;
+        }
+
+        a:hover .butoane_meniu {
+            color: #b8a694;
+            font-size: 10vw;
+            font-weight: bold;
+        }
+
+        a:visited .butoane_meniu {
+            color: #8c8073;
+        }
+    </style>
+</head>
+<body>
+    <p class="playwrite-it-moderna">Meniu:</p>
+    <a href="sculptura.html" target='_blank'><button class="butoane_meniu playwrite-it-moderna"><b>Ce este sculptura?</b></button></a>
+    <a href="istoria_sculpturii.html" target='_blank'><button class="butoane_meniu playwrite-it-moderna"><b>Evoluția sculpturii</b></button></a>
+    <a href="biografie_constantin_brancusi.html" target='_blank'><button class="butoane_meniu playwrite-it-moderna"><b>Cine a fost Constantin Brâncuși?</b></button></a>
+    <a href="stiluri_influente.html" target='_blank'><button class="butoane_meniu playwrite-it-moderna"><b>Stiluri și influențe</b></button></a>
+    <a href="opere.html" target='_blank'><button class="butoane_meniu playwrite-it-moderna"><b>Operele sale</b></button></a>
+</body>
+</html>
