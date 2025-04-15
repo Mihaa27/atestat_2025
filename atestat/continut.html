@@ -1,41 +1,73 @@
 <!DOCTYPE html>
 <html lang='ro'>
 <head>
-<title>Continut</title>
-<meta charset='utf-8'>
-<style>
-#imagine1
-{
-position:absolute;
-top:8%;
-left:12%;
-width:350px;
-z-index:1;
-border-radius:15px;
-}
-#imagine2
-{
-position:absolute;
-top:30%;
-left:30%;
-width:500px;
-z-index:2;
-border-radius:15px;
-}
-#imagine3
-{
-position:absolute;
-top:55%;
-left:60%;
-width:400px;
-z-index:3;
-border-radius:15px;
-}
-</style>
+    <meta charset='utf-8'>
+    <title>Conținut</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url('imagini/continut.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .container {
+            position: relative;
+            width: 90vw;
+            height: 90vh;
+        }
+
+        .imagine {
+            position: absolute;
+            border-radius: 15px;
+            width: 30vw;
+            max-width: 350px;
+            transition: transform 0.3s ease;
+        }
+
+        .imagine:hover {
+            transform: scale(1.1);
+        }
+
+        #imagine1 {
+            top: 10%;
+            left: 7%;
+            z-index: 1;
+        }
+
+        #imagine2 {
+            top: 32%;
+            left: 32%;
+            width: 35vw;
+            max-width: 500px;
+            z-index: 2;
+        }
+
+        #imagine3 {
+            top: 58%;
+            left: 58%;
+            width: 32vw;
+            max-width: 400px;
+            z-index: 3;
+        }
+    </style>
 </head>
-<body style='background-image:url(imagini/continut.png);background-size:cover'>
-<img id="imagine1" src='imagini/constantin.brancusi1.jpg'>
-<img id="imagine2" src='imagini/constantin.brancusi2.jpg'>
-<img id="imagine3" src='imagini/constantin.brancusi3.jpg'>
+<body>
+    <div class="container">
+        <img id="imagine1" class="imagine" src='imagini/constantin.brancusi1.jpg'>
+        <img id="imagine2" class="imagine" src='imagini/constantin.brancusi2.jpg'>
+        <img id="imagine3" class="imagine" src='imagini/constantin.brancusi3.jpg'>
+    </div>
 </body>
 </html>
